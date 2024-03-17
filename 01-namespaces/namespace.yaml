@@ -1,4 +1,5 @@
-appVersion : v1
-kind : Namespace
+appVersion: v1
+kind: Namespace
 metadata:
-  name : roboshop
+  name: roboshop
+ 
