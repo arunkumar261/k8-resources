@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: labels-demo
+  labels:
+    course: DevOps
+    trainer: siva
+    
+spec:
+  containers:
+  - name: first-pod
+    image: nginx
+    ports:
+    - containerPort: 80
