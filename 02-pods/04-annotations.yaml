@@ -6,7 +6,7 @@ metadata:
     course: DevOps
     trainer: "siva kumar"
   annotaions:
-    com.roboshop.traing.duration: "120_Hrs"   #key value pairs anything we can mention ext values
+    com.roboshop.training.duration: "120_Hrs"   #key value pairs anything we can mention ext values
     jenkins.url: "https://jenkins/roboshop/catalogue#45"
 spec:
   containers:
