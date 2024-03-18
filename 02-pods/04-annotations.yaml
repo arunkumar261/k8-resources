@@ -10,7 +10,7 @@ metadata:
     jenkins.url: "https://jenkins/roboshop/catalogue#45"
 spec:
   containers:
-  - name: nginx
+  - name: hello-pod
     image: nginx
     ports:
     - containerPort: 80
