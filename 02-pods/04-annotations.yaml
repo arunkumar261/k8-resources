@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name : annotaions-demo
+  name : annotations-demo       # pod name 
   labels:  # only to call inside resources like services and all etc ...
     course: DevOps
     trainer: "sivakumar"
