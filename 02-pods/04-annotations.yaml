@@ -5,12 +5,12 @@ metadata:
   labels:  # only to call inside resources like services and all etc ...
     course: DevOps
     trainer: "siva kumar"
-  annotaions:
+  annotations:
     com.roboshop.training.duration: "120_Hrs"   #key value pairs anything we can mention ext values
     jenkins.url: "https://jenkins/roboshop/catalogue#45"
 spec:
   containers:
-  - name: hello-pod
+  - name: annotaions-demo-practice
     image: nginx
     ports:
     - containerPort: 80
