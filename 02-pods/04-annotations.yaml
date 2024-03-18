@@ -4,7 +4,7 @@ metadata:
   name : annotaions-demo
   labels:  # only to call inside resources like services and all etc ...
     course: DevOps
-    trainer: siva
+    trainer: "siva kumar"
   annotaions:
     com.roboshop.traing.duration: "120_Hrs"   #key value pairs anything we can mention ext values
     jenkins.url: "https://jenkins/roboshop/catalogue#45"
