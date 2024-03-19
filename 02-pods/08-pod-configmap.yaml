@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cnfig-pod
+
+spec:
+  containers:
+  - name: config-pod
+    image: nginx
+    ports:
+    - containerPort: 80
+    env:
+    - name: course
+      valueFrom:
+        ConfigMapKeyRef:
+          name: devops-config
+          key: course
+    - name: trainer
+      valueFrom:
+        ConfigMapKeyRef:
+          name: devops-config
+          key: trainer
