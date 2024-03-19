@@ -5,11 +5,11 @@ metadata:
 spec:
   containers:
   - name: first-pod
-    image: nginx
+    image: nginx:latest
     ports:
     - containerPort: 80
     resources:
-      requests:
+      requests: 
         cpu: "100m"
         memory: "68Mi"
       limits:
