@@ -9,7 +9,7 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
-    env:
+    env:                 #by using each key value 
     - name: COURSE
       valueFrom:
         configMapKeyRef:
@@ -20,3 +20,18 @@ spec:
         configMapKeyRef:
           name: devops-config
           key: trainer
+---           #by using file directly all env applicable
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-pod
+
+spec:
+  containers:
+  - name: config-pod
+    image: nginx
+    ports:
+    - containerPort: 80
+    envFrom:
+    - configMapKeyRef:
+          name: devops-config
