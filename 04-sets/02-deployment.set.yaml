@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:mainline-alpine3.18-perl
+        image: almalinux:8
         ports:
         - containerPort: 80     
    
