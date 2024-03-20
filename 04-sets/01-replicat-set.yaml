@@ -20,7 +20,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:mainline-alpine3.18-perl
+        #image: nginx:mainline-alpine3.18-perl    #1.o.0 version
+        image: nginx:latest
 
    
     
