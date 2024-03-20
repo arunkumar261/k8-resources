@@ -1,26 +1,27 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: nginx-rs
+  name: nginx-deployment
   labels:
     app: nginx
-    tier: frontend
+    demo: deployment
 
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: nginx
-      tier: frontend
+      demo: deployment
   template:
     metadata:
       labels:
         app: nginx
-        tier: frontend
+        demo: deployment
     spec:
       containers:
       - name: nginx
-        image: nginx:mainline-alpine3.18-perl
-
+        image: nginx:latest
+      ports:
+      - containerPort: 80
    
     
