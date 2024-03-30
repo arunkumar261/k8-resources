@@ -31,7 +31,8 @@ spec:
 apiVersion: v1 
 kind: Pod
 metadata:
-  name: efs-static-pod
+  # name: efs-static-pod
+  name: app
   labels:
     # demo: efs-static-label
     demo: efs-static
