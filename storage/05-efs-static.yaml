@@ -16,7 +16,7 @@ spec:
 apiVersion: v1 
 kind: PersistentVolumeClaim
 metadata:
-  name: efs-static-pvc
+  name: efs-pvc
 spec:
   volumeName: efs-static-pv
   accessModes:
@@ -43,12 +43,12 @@ spec:
   volumes:
   - name: nginx-efs
     persistentVolumeClaim: 
-      claimName: ebs-static-pvc
+      claimName: ebs-pvc
 ---
 apiVersion: v1 
 kind: Service
 metadata:
-  name: efs-static-svc
+  name: efs-static-service
 spec:
   type: LoadBalancer
   selector:
