@@ -79,6 +79,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
+  storageClassName: ""
   volumeName: efs-static-pv
   resources:
     requests:
