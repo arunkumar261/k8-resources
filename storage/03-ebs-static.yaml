@@ -3,7 +3,7 @@ kind: PersistentVolume
 metadata:
   name: ebs-static
 spec:
-  accessMode:
+  accessModes:
     - ReadWriteOnce
   capacity: 
     storage: 10Gi
@@ -20,7 +20,7 @@ metadata:
 spec:
   storageClassName: "" #for static its empty its a seperate concept
   volumeName: ebs-static
-  accessMode:
+  accessModes:
     - ReadWriteOnce
   resources:
     requests:
