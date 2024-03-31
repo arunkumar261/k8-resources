@@ -31,9 +31,8 @@ metadata:
   name: nginx-service
 spec:
   selector:
-    labels:
-      app: nginx
-      demo: deployment
+    app: nginx
+    demo: deployment
   ports:
   - protocol: TCP
     port: 80
